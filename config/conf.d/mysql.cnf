@@ -1,0 +1,7 @@
+[mysql]
+max_allowed_packet=2016M
+#query_cache_type=1
+
+#query_cache_size = 36M 
+#query_cache_min_res_unit = 2K
+#table_cache = 512

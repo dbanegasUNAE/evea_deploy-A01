@@ -1,0 +1,10 @@
+/eveas/*
+/logs/*
+/logs/nginx/*
+/etc/ssl/*
+/mysql-data/
+/www/*
+!/www/error/
+*.zip
+*.rar
+.env
