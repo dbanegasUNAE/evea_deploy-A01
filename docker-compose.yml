@@ -20,7 +20,7 @@ services:
     command: [ "/bin/sh", "/start-nginx.sh" ]
     restart: always
     networks:
-      sgeveanet:
+      eveasnet:
         ipv4_address: 10.99.0.66
 
   php:
@@ -32,7 +32,7 @@ services:
       - "/etc/localtime:/etc/localtime:ro"
     restart: always
     networks:
-      sgeveanet:
+      eveasnet:
         ipv4_address: 10.99.0.67
 
   db:
@@ -53,11 +53,11 @@ services:
       - 3306:3306
     restart: always
     networks:
-      sgeveanet:
+      eveasnet:
         ipv4_address: 10.99.0.68
 
 networks:
-  sgeveanet:
+  eveasnet:
     driver: bridge
     ipam:
       driver: default
